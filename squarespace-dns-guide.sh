@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo "🔧 Squarespace DNS Setup for onlibrary.net → Firebase"
+echo "=================================================="
+
+echo "STEP 1: Squarespace DNS Settings"
+echo "1. Login to Squarespace account"
+echo "2. Go to Settings → Domains"
+echo "3. Click on onlibrary.net"
+echo "4. Click 'DNS Settings' or 'Advanced Settings'"
+echo ""
+
+echo "STEP 2: DNS Records to Add/Modify"
+echo "================================"
+echo "Type: A     | Host: @   | Value: 199.36.158.100 | TTL: 3600"
+echo "Type: A     | Host: www | Value: 199.36.158.100 | TTL: 3600"
+echo ""
+
+echo "STEP 3: Records to Remove"
+echo "========================"
+echo "❌ Remove A records pointing to: 198.185.159.144"
+echo "❌ Remove A records pointing to: 198.185.159.145"  
+echo "❌ Remove A records pointing to: 198.49.23.144"
+echo "❌ Remove A records pointing to: 198.49.23.145"
+echo "❌ Remove any CNAME records for @ or www"
+echo ""
+
+echo "STEP 4: Alternative - Transfer DNS to Cloudflare"
+echo "=============================================="
+echo "If Squarespace blocks Firebase DNS changes:"
+echo "1. Sign up for free Cloudflare account"
+echo "2. Add onlibrary.net to Cloudflare"
+echo "3. Change nameservers in Squarespace to Cloudflare's"
+echo "4. Set A records in Cloudflare DNS"
+echo ""
+
+echo "STEP 5: Verification"
+echo "==================="
+echo "After DNS changes, wait 30-60 minutes, then run:"
+echo "./check-dns.sh"
+echo ""
+echo "Expected result: onlibrary.net should resolve to 199.36.158.100"

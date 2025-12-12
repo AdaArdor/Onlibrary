@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Academic Typography ===== */
+body {
+  @apply bg-paper dark:bg-night text-ink dark:text-parchment;
+  font-family:
+    ui-serif,
+    Georgia,
+    "Palatino Linotype",
+    "Book Antiqua",
+    "Times New Roman",
+    serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ===== Smooth UI transitions ===== */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* ===== Book aesthetics ===== */
+.book-shadow {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08),
+              0px 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Gradient optional animations ===== */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+
+/* ===== Inputs ===== */
+.input-field {
+  @apply w-full p-2 rounded bg-paper dark:bg-night border border-oak/30 dark:border-parchment/20 focus:border-pthalo dark:focus:border-fern outline-none;
+}
+
+/* ===== Cards ===== */
+.card {
+  @apply rounded-xl border border-oak/20 dark:border-parchment/20 p-3 book-shadow;
+
+  /* Fade background variables */
+  --card-bg: var(--card-bg-light);
+}
+.dark .card {
+  --card-bg: var(--card-bg-dark);
+}
+
+/* Background color values for fade blending */
+:root {
+  --card-bg-light: #efebe5;
+  --card-bg-dark: #0f1112;
+}
+
+.button-primary {
+  @apply bg-pthalo dark:bg-fern text-paper dark:text-night hover:bg-fern dark:hover:bg-pthalo rounded;
+}
+
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================================================
+   F A D E   E F F E C T S  —  ONLY the 3rd line/row fades
+   ============================================================ */
+
+/* ---------- TITLE (clean 3-line clamp with native ellipsis) ---------- */
+.title-3line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+  max-height: calc(1.2em * 3);
+}
+
+/* ---------- TAGS (clean 3-line limit with natural wrapping) ---------- */
+.tags-3line {
+  overflow: hidden;
+  line-height: 1.2rem;
+  max-height: calc(1.2rem * 3);
+}
