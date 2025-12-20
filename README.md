@@ -9,9 +9,9 @@ Onlibrary is a full-stack web application that helps users organize their person
 ![Firebase](https://img.shields.io/badge/Firebase-12.6-FFCA28?style=flat&logo=firebase&logoColor=black)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 
-## ✨ Key Features
+##  Key Features
 
-### 📚 Library Management
+###  Library Management
 - **ISBN Lookup**: Automatically fetch book covers and metadata from Open Library API
 - **Auto-Generated Covers**: Beautiful styled placeholder covers for books without ISBNs  
 - **Rich Metadata**: Track titles, authors, publishers, release years, tags, notes, and reading dates
@@ -20,35 +20,35 @@ Onlibrary is a full-stack web application that helps users organize their person
 - **Advanced Search**: Filter books by title, author, publisher, or tags
 - **Pagination**: Optimized for collections of 200+ books (50 per page)
 
-### 📊 Reading Analytics
+###  Reading Analytics
 - **Interactive Charts**: Visualize reading trends with Chart.js
 - **Reading Statistics**: Books read per month, genre preferences, publishing year distributions
 - **Progress Tracking**: Monitor your reading journey over time
 
-### 👥 Social Features
+###  Social Features
 - **Friend System**: Connect with readers via username-based discovery
 - **Friend Requests**: Send and receive friend requests with real-time notifications
 - **Activity Feed**: See what your friends are currently reading
 - **Explore Page**: Discover books from the community based on shared interests
 - **Privacy Controls**: Manage what friends can see about your library
 
-### 📋 Custom Lists
+###  Custom Lists
 - **Themed Collections**: Create custom reading lists with visual themes
 - **Cover Images**: Set custom cover images for your lists
 - **Flexible Organization**: Add any book to multiple lists
 
-### 💾 Data Portability
+###  Data Portability
 - **CSV Export**: Export your entire library with full metadata
 - **CSV Import**: Import from Onlibrary or Goodreads CSV format
 - **Data Ownership**: Your data, your control - no vendor lock-in
 
-### 🎨 User Experience
+###  User Experience
 - **Dark Mode**: Comprehensive dark theme support with custom color palette
 - **Responsive Design**: Mobile-first approach that works on all devices
 - **Smooth Animations**: Powered by Framer Motion
 - **Demo Mode**: Try the full app without signing up
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 ### Frontend
 - **React 19.2** with **TypeScript** - Type-safe component architecture
@@ -73,7 +73,7 @@ Onlibrary is a full-stack web application that helps users organize their person
 - **ESLint 9** - Code quality enforcement
 - **PostCSS & Autoprefixer** - CSS processing
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Key Design Patterns
 - **Real-time Subscriptions**: Firestore listeners keep data synchronized across devices
@@ -87,7 +87,7 @@ Onlibrary is a full-stack web application that helps users organize their person
 - Efficient Firestore queries with indexes
 - Optimistic UI updates for better UX
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -137,7 +137,7 @@ Onlibrary is a full-stack web application that helps users organize their person
    firebase deploy --only hosting
    \`\`\`
 
-## 📱 Usage
+##  Usage
 
 ### Demo Mode
 Try the app without signing up - click "Try Demo" to explore with sample data.
@@ -159,25 +159,21 @@ Try the app without signing up - click "Try Demo" to explore with sample data.
 3. Send friend requests and view activity feed
 4. Explore books that your friends are reading
 
-## 🔒 Security
+##  Security
 
 - Firestore security rules ensure users can only access their own data
 - Friend privacy settings control what others can see
 - Firebase Authentication handles secure user management
 - Environment variables keep sensitive configuration private
 
-## 👨‍💻 Developer
+##  Developer
 
 **Nikolaj Jacobsen**
 - GitHub: [@AdaArdor](https://github.com/AdaArdor)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [Open Library API](https://openlibrary.org/developers/api) for book metadata
 - [Heroicons](https://heroicons.com/) for beautiful icons
 - [Firebase](https://firebase.google.com/) for backend infrastructure
 - [TailwindCSS](https://tailwindcss.com/) for styling utilities
-
----
-
-**Built with ❤️ using React, TypeScript, and Firebase**
